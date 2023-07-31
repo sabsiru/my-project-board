@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 public record ArticleCommentDto(
         Long id,
         Long articleId,
+        UserAccountDto userAccountDto,
         String content,
         LocalDateTime createdAt,
         String createdBy,
@@ -38,4 +39,5 @@ public record ArticleCommentDto(
                 content
         );
     }
+
 }
